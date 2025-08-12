@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="setLocalStorage()">
+    <h1> OLá bem vin do ao site compra energéticos</h1>
+    <main class="vendas">
+        <ul class="vendas__ul">
+            <li class="vendas__li">
+                <h2>Quantos energéticos quer comprar? Estoque: <h3 >25</h3></span></h2>
+                <input type="number" placeholder="Quantidade" id="vendas__placeholder" >
+                <br>
+                
+
+        <button class="vendas__button" onclick="compra()"> comprar</button>
+        </li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <h4 class="footer__h4"> Você é um administrador? <br> Então clique aqui <br>
+            <label for="senhaADM"> Digite a senha de ADM </Label>
+             <input type="password" id="senhaADM">
+            <button class="footer__button" onclick="adiministrado()">Acesso restrito</button></h4>
+    </footer>
+
+</body>
+</html>    <script src="arquivo.js"></script>

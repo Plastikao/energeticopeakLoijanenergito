@@ -1,0 +1,14 @@
+.footer{
+    bottom: 0%;
+    position: fixed;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: c;
+
+}
+
+    .footer__h4{
+        text-align: center;
+    }
