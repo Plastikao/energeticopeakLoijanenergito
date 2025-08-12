@@ -68,7 +68,7 @@ window.location.href="adm.html"
  
          alert('Senha errada, você não é um adiminstrado!');
     }
-
+console.log("oioi")
   
 
 }
@@ -84,4 +84,29 @@ function mostraEstoque() {
 function volta() {
     window.location.href ="index.html";
    
+}
+
+
+function adcionaEstoque () {
+
+  
+      const input = document.getElementById('input-estoque');
+    const _quant_estoque = Number(input.value);
+     let estoqueStorage = Number(localStorage.getItem('estoque'));
+
+   if (_quant_estoque >= 0) {
+
+         estoqueStorage += _quant_estoque;
+
+
+        localStorage.setItem('estoque', estoqueStorage);
+
+
+        document.getElementById('estoque__id').innerText = estoqueStorage;
+
+        input.value = '';
+    }
+
+    else{ alert("nao adicionou nada")}
+
 }
